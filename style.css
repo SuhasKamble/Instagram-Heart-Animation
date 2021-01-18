@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+#likeCount{
+    color: red;
+}
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+main h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+.img-div{
+    padding: 10px;
+}
+
+.img-div img{
+    position: relative;
+
+}
+
+.fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: red;
+    animation: heartAnime 0.9s ease;
+    -webkit-animation:heartAnime 0.9s ease ;
+}
+
+.realHeart.change{
+    color: red;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+@keyframes heartAnime{
+    100%{
+        transform: scale(8);
+        opacity: 0;
+    }
+}
+
+.icons{
+    width: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+}
+.icons__left .far{
+    margin-right: 0.8rem;
+}
+.far{
+    font-size: 2rem !important;
+   cursor: pointer;
+    
+}
+
+
+.img-div img{
+    height: 550px;
+    width: 400px;
+    cursor: pointer;
+    position: relative;
+    zoom: 0%;
+}
+
+
+
+@media(max-width:780px){
+    .img-div img{
+        height: 450px;
+        width: 350px;
+    }
+}
